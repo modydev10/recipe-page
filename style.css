@@ -5,6 +5,16 @@
     font-family: 'Outfit', sans-serif;
 }
 
+@font-face {
+    font-family: 'Outfit';
+    src: url(/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(/Young_Serif/YoungSerif-Regular.ttf);
+}
+
 :root {
     --White: hsl(0, 0%, 100%);
 
@@ -116,7 +126,7 @@ section.preparation-time ul li {
 
 .section-title {
     color: var(--Brown800);
-    font-family: "Young serif";
+    font-family: "Young Serif";
     font-size: 25px;
     
 }
