@@ -36,6 +36,20 @@ body {
     place-items: center;
     background: var(--Stone100);
     padding: 80px 0px;
+    color: var(--Stone600);
+}
+
+.section-title {
+    color: var(--Brown800);
+    font-family: "Young Serif";
+    font-size: 25px;   
+}
+
+.seperator {
+    width: 100%;
+    height: 0.7px;
+    background: var(--Stone150);
+    align-self: center;
 }
 
 
@@ -44,15 +58,11 @@ body {
     width: 600px;
     max-width: 90%;
     height: 1400px;
-    /* max-height: fit-content; */
     padding: 30px;
-    /* position: absolute; */
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    /* align-items: center; */
+    gap: 25px;
 }
 
 
@@ -61,36 +71,30 @@ body {
     border-radius: 12px;
 }
 
+/* the first section: title */
 section.title {
-    /* border: 2px solid red; */
-    height: 90px;
     font-size: 14px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 section.title span.title {
     color: #000;
     font-family: 'Young Serif';
     font-size: 25px;
-    margin-bottom: 15px;
 }
 
 
 section.preparation-time {
     background: var(--Rose50);
     border-radius: 16px;
-    height: 150px;
-    padding: 25px 0 20px 25px;
+    height: 140px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-}
-
-span, li {
-    color: var(--Stone600)
+    gap: 8px;
 }
 
 .preparation-time-span {
@@ -99,90 +103,67 @@ span, li {
 }
 
 section.preparation-time ul {
-    list-style-position: inside;
-    font-size: 14px;
-    /* border: 2px solid blue; */
-    height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-section.preparation-time span {
-    font-size: 16px;
-    position: relative;
-    top: 1px;
-}
-
-.highlighted {
-    font-weight: 600;
-    /* font-size: 20px; */
+    justify-content: center;
+    gap: 10px;
+    padding-left: 20px
 }
 
 section.preparation-time ul li {
-    font-size: 10px;
+    padding-inline-start: 15px;
+    font-size: 12px;
+}
+
+section.preparation-time ul li::marker {
+    font-size: 9px;
 }
 
 
-.section-title {
-    color: var(--Brown800);
-    font-family: "Young Serif";
-    font-size: 25px;
-    
-}
-
+/* the second section: ingredients */
 section.ingredients {
-    /* border: 2px solid red; */
-    height: 170px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px
 }
 
 section.ingredients ul {
-    height: 125px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    list-style-position: inside;
-    /* border: 2px solid blue; */
-}
-
-section.ingredients ul li span {
-    padding-left: 15px;
-    font-size: 16px;
-    position: relative;
-    top: 1px;
+    gap: 7px;
 }
 
 section.ingredients ul li {
-    font-size: 10px;
+    font-size: 12px;
+    padding-inline-start: 14px;
 }
 
-.seperator {
-    width: 100%;
-    height: 0.7px;
-    background: var(--Stone150);
-    align-self: center;
-    /* margin: 20px */
+section.ingredients ul li::marker {
+    font-size: 9px;
 }
 
 
 
-
-section.instructions ol {
-    list-style-position: inside;
-    margin-top: 20px;
-    height: auto;
+/* the third section: instructions */
+section.instructions {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 14px;
+}
+
+section.instructions ol {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-size: 14px;
 }
 
-section.instructions ol li span {
-    font-weight: 600;
-    padding-left: 10px;
+section.instructions ol li {
+    line-height: 20px;
+    padding-inline-start: 14px;
 }
 
 section.instructions ol li::marker {
@@ -190,36 +171,40 @@ section.instructions ol li::marker {
     font-weight: 700;
 }
 
+
+/* the fourth section: nutrition */
 section.nutrition {
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    position: relative;
-    /* top: -10px; */
-}
-
-
-.facts-label {
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 60%;
+    justify-content: center;
+    gap: 15px;
 }
 
 .nutrition-description {
-    font-size: 14px;
+    font-size: 13px;
 }
 
-section.nutrition .flex {
-    /* border: 2px solid orange; */
-    width: 60%;
+.facts-label {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+
+section.nutrition .flex-container {
+    border: 2px solid orange;
+    width: 50%;
+    align-self: center;
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    font-size: 15px;
+    /* gap: 20px; */
+    /* padding: 0 50px; */
+    /* gap: 200px; */
+    /* padding-left: 23px; */
+    /* font-size: 15px; */
 }
 
 
