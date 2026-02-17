@@ -52,12 +52,15 @@ body {
     align-self: center;
 }
 
+ul li::marker {
+    font-size: 9px;
+}
+
 
 #main-card {
     background: var(--White);
     width: 600px;
     max-width: 90%;
-    height: 1400px;
     padding: 30px;
     border-radius: 16px;
     display: flex;
@@ -90,7 +93,7 @@ section.preparation-time {
     background: var(--Rose50);
     border-radius: 16px;
     height: 140px;
-    padding-left: 20px;
+    padding-left: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,25 +110,20 @@ section.preparation-time ul {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-left: 20px
+    padding-left: 18px
 }
 
 section.preparation-time ul li {
     padding-inline-start: 15px;
-    font-size: 12px;
+    font-size: 13px;
 }
-
-section.preparation-time ul li::marker {
-    font-size: 9px;
-}
-
 
 /* the second section: ingredients */
 section.ingredients {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 10px
+    /* justify-content: center; */
+    gap: 10px;
 }
 
 section.ingredients ul {
@@ -136,14 +134,9 @@ section.ingredients ul {
 }
 
 section.ingredients ul li {
-    font-size: 12px;
+    font-size: 13px;
     padding-inline-start: 14px;
 }
-
-section.ingredients ul li::marker {
-    font-size: 9px;
-}
-
 
 
 /* the third section: instructions */
@@ -174,7 +167,7 @@ section.instructions ol li::marker {
 
 /* the fourth section: nutrition */
 section.nutrition {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,30 +178,16 @@ section.nutrition {
     font-size: 13px;
 }
 
-.facts-label {
-    /* border: 2px solid blue; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 5px;
+table {
+    border: 1px solid blue;
+}
+
+tbody {
+    border: 1px solid red;
 }
 
 
-section.nutrition .flex-container {
-    border: 2px solid orange;
-    width: 50%;
-    align-self: center;
-    display: flex;
-    justify-content: space-between;
-    /* gap: 20px; */
-    /* padding: 0 50px; */
-    /* gap: 200px; */
-    /* padding-left: 23px; */
-    /* font-size: 15px; */
-}
-
-
-span.amount {
+td {
     color: var(--Brown800);
     font-weight: 600;
     font-size: 16px;
