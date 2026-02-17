@@ -59,13 +59,12 @@ ul li::marker {
 
 #main-card {
     background: var(--White);
-    width: 600px;
-    max-width: 90%;
-    padding: 30px;
+    max-width: 46rem;
+    padding: 2.5rem;
+    gap: 25px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
 }
 
 
@@ -86,6 +85,10 @@ section.title span.title {
     color: #000;
     font-family: 'Young Serif';
     font-size: 25px;
+}
+
+#recipe-description {
+    font-size: 13px;
 }
 
 
@@ -167,7 +170,6 @@ section.instructions ol li::marker {
 
 /* the fourth section: nutrition */
 section.nutrition {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -179,13 +181,17 @@ section.nutrition {
 }
 
 table {
-    border: 1px solid blue;
+    border-collapse: collapse;
 }
 
-tbody {
-    border: 1px solid red;
+
+tr {
+    border-bottom: 1px solid var(--Stone150);
 }
 
+th {
+    font-weight: 400;
+}
 
 td {
     color: var(--Brown800);
@@ -193,6 +199,11 @@ td {
     font-size: 16px;
 }
 
+th, td {
+    width: 50%;
+    text-align: start;
+    padding: .75rem 2rem;
+}
 
 div.attribution {
     position: relative;
